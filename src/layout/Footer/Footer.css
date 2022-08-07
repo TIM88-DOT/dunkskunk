@@ -1,0 +1,133 @@
+.footer {
+  width: 100%;
+  height: max-content;
+  padding: 9px 0 0 0;
+  margin: 50px auto 0 auto;
+}
+
+.ft_container {
+  width: 90%;
+  border-top: 2px solid gray;
+  opacity: 0.8;
+  padding: 60px 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ft_container img {
+  width: 70px;
+}
+
+.ft_container > img {
+  width: 170px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.ft_social {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.fi {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 100%;
+  background-color: black;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.fi i {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.fi img {
+  width: 25px;
+}
+
+.ft_copy {
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+  color: white;
+  background-color: #c2c500;
+  text-align: center;
+}
+
+@media screen and (min-width: 1900px) {
+  .ft_container {
+    padding: 89px 0;
+  }
+  .ft_container > img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ft_container > img {
+    left: 122px;
+  }
+  .main_container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ft_container > img {
+    left: 80px;
+    width: 120px;
+  }
+  .main_container {
+    min-height: 77vh;
+  }
+
+  .main h1 {
+    font-size: 1.3rem;
+  }
+  .ft_social {
+    width: 200px;
+    justify-content: space-between;
+  }
+  .fi {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer {
+    margin: 10px auto 0 auto;
+  }
+  .ft_social {
+    width: 189px;
+    display: flex;
+    align-items: center;
+  }
+  .ft_container {
+    padding: 29px 0;
+  }
+  .ft_container > img {
+    left: 80px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ft_social {
+    width: 169px;
+    display: flex;
+    align-items: center;
+  }
+  .ft_container > img {
+    left: 80px;
+    width: 100px;
+  }
+}
