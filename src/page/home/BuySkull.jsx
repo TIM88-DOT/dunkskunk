@@ -61,28 +61,28 @@ const BuySkull = () => {
   }, [blockchain.account]);
 
   const claimNFTs = async () => {
-if (connected){
-    try {
-      let cost = data.cost.toString();
-      console.log(cost)
-      let gasLimit = CONFIG.GAS_LIMIT;
-      let totalCostWei = (cost * mintAmount);
-      let totalGasLimit = String(gasLimit * mintAmount);
-      console.log("Cost: ", totalCostWei);
-      console.log("Gas limit: ", totalGasLimit);
-      setClaimingNft(true);
-      await blockchain.smartContract
-        .mint(blockchain.account, mintAmount, {
-          gasLimit: String(totalGasLimit),
-          value: String(totalCostWei),
-        });
-      setClaimingNft(false);
-    } catch (error) {
-      console.log(error);
-      setClaimingNft(false);
+    if (connected) {
+      try {
+        let cost = data.cost.toString();
+        console.log(cost)
+        let gasLimit = CONFIG.GAS_LIMIT;
+        let totalCostWei = (cost * mintAmount);
+        let totalGasLimit = String(gasLimit * mintAmount);
+        console.log("Cost: ", totalCostWei);
+        console.log("Gas limit: ", totalGasLimit);
+        setClaimingNft(true);
+        await blockchain.smartContract
+          .mint(blockchain.account, mintAmount, {
+            gasLimit: String(totalGasLimit),
+            value: String(totalCostWei),
+          });
+        setClaimingNft(false);
+      } catch (error) {
+        console.log(error);
+        setClaimingNft(false);
+      }
     }
-  }
-  else alert("Wallet not connected !")
+    else alert("Wallet not connected !")
   };
 
   const checkAmount = (values) => {
@@ -99,8 +99,10 @@ if (connected){
             <h5>
               Initial Price(test) <strong>.05 BNB</strong>
             </h5>
-            <div style={{ alignItems: "center", width: "30%", display: "flex", flexDirection: "column" }}>
-              <h4 style={{ marginBottom: "14px", marginRight: "10px" }}>{mintAmount}</h4>
+            <div style={{ alignItems: "center", textAlign: "center", width: "30%", display: "flex", flexDirection: "column", marginInline: "1.2em" }}>
+              <output style={{fontWeight:"bold", fontSize:"18px",  marginBottom: '15px' }} id="output">
+                {mintAmount}
+              </output>
               <Range
                 step={1}
                 min={1}
@@ -115,7 +117,7 @@ if (connected){
                       height: '6px',
                       width: '100%',
                       backgroundColor: '#ccc',
-                      marginBottom: "1.8em"
+                      marginBottom: "1.8em",
                     }}
                   >
                     {children}
@@ -128,13 +130,13 @@ if (connected){
                       ...props.style,
                       height: '1.1em',
                       width: '1.1em',
-                      backgroundColor: '#999',
+                      backgroundColor: '#999'
                     }}
                   />
                 )}
               />
             </div>
-            <button 
+            <button
               disabled={claimingNft ? 1 : 0}
               onClick={(e) => {
                 e.preventDefault();
