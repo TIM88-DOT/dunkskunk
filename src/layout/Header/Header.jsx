@@ -1,10 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./header.css";
 import logo from "../../assets/images/upper-logo.png";
 import { Link } from "react-scroll";
+import { useDispatch, useSelector } from "react-redux";
+import { connect, startUp } from "../../redux/blockchain/blockchainActions";
+
 const Header = (props) => {
   const [activeNav, sectActiveNav] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [connected, setConnected] = useState(false);
+  const [account, setAccount] = useState("Connect Wallet");
+
+  const blockchain = useSelector((state) => state.blockchain);
+  const dispatch = useDispatch();
+
+  const handleConnection = async (e) => {
+    dispatch(connect());
+  };
+  useEffect(() => {
+    let account = blockchain.account;
+    console.log("account = , connected", account, blockchain.connected);
+    setConnected(blockchain.connected);
+    let address = account
+      ? account.slice(2, 6) + "..." + account.slice(38, 42)
+      : "Connect Wallet";
+    if (blockchain.connected) {
+      setAccount(address);
+    }
+    // dispatch(startUp());
+  }, [blockchain]);
+
 
   return (
     <header className="animate-header">
@@ -99,13 +124,19 @@ const Header = (props) => {
               </li>
               <li>
                 <div className="connect_btn mobile2">
-                  <button>Connect Wallet</button>
+                  <button onClick={(e) => {
+                    e.preventDefault();
+                    handleConnection();
+                  }}>{account}</button>
                 </div>
               </li>
             </ul>
           </nav>
           <div className="connect_btn ms-3 desktop2">
-            <button>Connect Wallet</button>
+            <button onClick={(e) => {
+              e.preventDefault();
+              handleConnection();
+            }}>{account}</button>
           </div>
         </div>
         <div className="menu-btn">

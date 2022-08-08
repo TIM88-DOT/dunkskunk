@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x86296712858951341d7e1cd09ec49a1e10086913",
+  "SCAN_LINK": "https://testnet.bscscan.com/address/0x86296712858951341d7e1cd09ec49a1e10086913",
+  "NETWORK": {
+    "NAME": "Binance Smart Chain Testnet",
+    "SYMBOL": "BNB",
+    "ID": 97
+  },
+  "NFT_NAME": "DrunkSkunks NFT",
+  "SYMBOL": "DS NFT",
+  "MAX_SUPPLY": 5605,
+  "WEI_COST": 250000000000000000,
+  "DISPLAY_COST": 0.25,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "",
+  "MARKETPLACE_LINK": "",
+  "SHOW_BACKGROUND": true
+}
