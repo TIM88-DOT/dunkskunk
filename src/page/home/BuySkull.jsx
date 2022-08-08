@@ -115,7 +115,7 @@ if (connected){
                       height: '6px',
                       width: '100%',
                       backgroundColor: '#ccc',
-                      marginBottom: "25px"
+                      marginBottom: "1.8em"
                     }}
                   >
                     {children}
@@ -126,8 +126,8 @@ if (connected){
                     {...props}
                     style={{
                       ...props.style,
-                      height: '22px',
-                      width: '22px',
+                      height: '1.1em',
+                      width: '1.1em',
                       backgroundColor: '#999',
                     }}
                   />
