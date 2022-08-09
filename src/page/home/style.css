@@ -39,6 +39,7 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   100% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
@@ -50,6 +51,7 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   100% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
@@ -420,7 +422,7 @@
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
 }
 
@@ -448,6 +450,13 @@
 .bs_container strong {
   color: #000000;
   margin-left: 20px;
+}
+
+#output {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-right: 12px;
 }
 
 /* ABOUT */
@@ -639,6 +648,7 @@ html .toxic_right img {
   position: relative;
   overflow: visible;
 }
+
 .roadmap-bg {
   border-radius: 65px;
   width: 1250px;
@@ -657,18 +667,22 @@ html .toxic_right img {
   width: 28%;
   position: absolute;
 }
+
 .left-pointer {
   width: max-content;
   margin-right: 19px;
 }
+
 .left-pointer h2 {
   color: #ffffff;
   margin-bottom: 14px;
 }
+
 .pointer-img {
   width: 80px;
   object-fit: contain;
 }
+
 .right-pointer {
   color: white;
   display: flex;
@@ -677,6 +691,7 @@ html .toxic_right img {
   flex-direction: column;
   gap: 4px;
 }
+
 html .ms-5 {
   margin-left: -34px;
 }
@@ -689,6 +704,7 @@ html .ms-5 {
   padding: 0;
   text-transform: uppercase;
 }
+
 .right-pointer p {
   color: #c1c1c1;
   font-size: 0.9rem;
@@ -696,40 +712,50 @@ html .ms-5 {
   overflow: visible;
   padding: 0;
 }
+
 .pointer-div1 {
   top: 3.5%;
   left: 54%;
 }
+
 .pointer-div2 {
   top: 12%;
   left: 27%;
 }
+
 .pointer-div2 .left-pointer {
   order: 2;
 }
+
 .pointer-div3 {
   left: 39%;
   top: 23%;
 }
+
 .pointer-div4 {
   top: 37%;
   left: 29%;
 }
+
 .pointer-div4 .left-pointer {
   order: 2;
 }
+
 .pointer-div5 {
   top: 53%;
   left: 50%;
 }
+
 .pointer-div7 {
   left: 55%;
   top: 80%;
 
 }
+
 .pointer-div6 .left-pointer {
   order: 2;
 }
+
 .pointer-div6 {
   top: 72%;
   left: 24%;
@@ -840,6 +866,7 @@ html .ms-5 {
   html {
     font-size: 20px;
   }
+
   .main,
   .main_wrapper {
     max-width: 1400px;
@@ -848,50 +875,63 @@ html .ms-5 {
   .header-container {
     max-width: 1400px;
   }
+
   .main_container {
     max-width: 1600px;
     width: 98%;
   }
+
   .main_text {
     width: 512px;
   }
+
   .main h1 {
     font-size: 2.2rem;
   }
+
   .main button {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1700px) {
+
   .main,
   .main_wrapper {
     max-width: 1500px;
   }
+
   html .toxic_right img {
     width: 220px;
     height: 220px;
   }
+
   .roadmap {
     padding: 2rem 0rem;
   }
+
   .roadmap-image {
     margin-top: 0;
   }
+
   .roadmap h1 {
     margin-bottom: 0;
   }
+
   .roadmap-bg {
     /* width: 1388px; */
     height: 1400px;
   }
+
   .right-pointer {
     margin-left: 6px;
     margin-top: 22px;
   }
+
   .ms-2 {
     margin-left: 40px !important;
   }
+
   /* .pointer-div5 {
     left: 39%;
   }
@@ -902,6 +942,7 @@ html .ms-5 {
 }
 
 @media screen and (min-width: 1900px) {
+
   .main,
   .main_wrapper {
     max-width: 1700px;
@@ -924,9 +965,11 @@ html .ms-5 {
   html .ms-5 {
     margin-left: 0;
   }
+
   .roadmap-bg {
     display: none;
   }
+
   .roadmap-image {
     flex-direction: column;
     height: 100%;
@@ -936,6 +979,7 @@ html .ms-5 {
     position: relative;
     gap: 2rem;
   }
+
   .roadmap-image:after {
     content: "";
     position: absolute;
@@ -946,6 +990,7 @@ html .ms-5 {
     top: 0;
     z-index: 0;
   }
+
   .pointer-div {
     position: relative;
     z-index: 1;
@@ -954,12 +999,14 @@ html .ms-5 {
     justify-content: space-between;
     align-items: center;
   }
+
   .left-pointer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex: 0.4;
   }
+
   .right-pointer {
     display: flex;
     flex-direction: column;
@@ -967,12 +1014,15 @@ html .ms-5 {
     align-items: flex-start;
     flex: 0.6;
   }
+
   .pointer-div .right-pointer {
     order: 2 !important;
   }
+
   .pointer-div .left-pointer {
     order: 1 !important;
   }
+
   .ms-2 {
     margin-left: 0 !important;
   }
@@ -1006,15 +1056,19 @@ html .ms-5 {
   .main_wrapper {
     width: 90%;
   }
+
   .buy_skull {
     padding: 0;
   }
+
   .banner img {
     width: 100%;
   }
+
   .abt_img img {
     margin: 10px auto 0 auto;
   }
+
   .welcome {
     margin-top: 40px;
     -webkit-box-orient: vertical;
@@ -1022,23 +1076,29 @@ html .ms-5 {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .wl_text {
     width: 100%;
     padding: 20px 0;
   }
+
   .wl_img {
     width: 100%;
   }
+
   .wl_img div {
     justify-content: center;
   }
+
   .buy_skull {
     margin: 30px auto;
   }
+
   .bs_container,
   .abt_img {
     width: 100%;
   }
+
   .abt_img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1047,30 +1107,37 @@ html .ms-5 {
     -ms-flex-pack: center;
     justify-content: center;
   }
+
   .specs_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .specs_left {
     padding-left: 0;
   }
+
   .specs .specs_left {
     width: 100%;
   }
+
   .specs_right {
     width: 100%;
   }
+
   .specs_right img {
     margin: 30px auto;
   }
+
   .team_container {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 812px) {
+
   .main_wrapper h2,
   .main_wrapper h1 {
     font-size: 1.5rem;
@@ -1079,14 +1146,20 @@ html .ms-5 {
   .right-pointer h4 {
     font-size: 1.2rem;
   }
+
   .right-pointer p {
     font-size: 0.9rem;
   }
+
   .pointer-div1 {
     top: 2.5%;
   }
+
   .pointer-div5 {
     top: 79%;
+  }
+  #output{
+    margin-right: 8px;
   }
 }
 
@@ -1094,6 +1167,7 @@ html .ms-5 {
   .pointer-div2 {
     left: 8%;
   }
+
   .pointer-div4 {
     left: 8%;
   }
@@ -1104,15 +1178,18 @@ html .ms-5 {
     left: 50%;
     transform: translateX(-50%);
   }
+
   .team {
     padding-bottom: 0;
   }
+
   .team_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .team_card {
     width: 100%;
     height: -webkit-max-content;
@@ -1126,10 +1203,12 @@ html .ms-5 {
   .roadmap-bg {
     width: 600px;
   }
+
   .bs_container h2,
   .bs_container h5 {
     font-size: 1rem;
   }
+
   .bs_container button {
     font-size: 1rem;
     padding: 14px 24px;
@@ -1146,36 +1225,48 @@ html .ms-5 {
   .roadmap-image:after {
     height: 102%;
   }
+
   .abt_img img {
     height: 300px;
     width: 90%;
   }
+
   .wl_img div {
     width: 100%;
     justify-content: space-between;
   }
+
   .wl_img img {
     width: 48%;
     height: unset;
   }
+
   .main_text {
     width: 90%;
   }
+
   .roadmap h2 {
     font-size: 25px !important;
   }
+
   .bs_container {
     padding: 10px;
   }
+
   .bs_container h2,
   .bs_container h5 {
     font-size: 0.8rem;
   }
+
   .main_text {
     width: 90%;
   }
+
   .main h1 {
     font-size: 1.5rem;
+  }
+  #output{
+    margin-right: 3px;
   }
 }
 
@@ -1184,6 +1275,9 @@ html .ms-5 {
     width: 130px;
     height: 130px;
     object-fit: contain;
+  }
+  #output{
+    margin-right: 1.5px;
   }
 }
 
@@ -1197,18 +1291,22 @@ html .ms-5 {
   .team {
     margin: 40px auto 0 auto;
   }
+
   .right-pointer h4 {
     font-size: 1.1rem;
   }
+
   html .toxic_right img {
     width: 80px;
     height: 80px;
     object-fit: contain;
   }
+
   .socials_wrap {
     bottom: 60px;
     right: 15px;
   }
+
   .share_icon {
     width: 50px;
     height: 50px;
@@ -1217,22 +1315,28 @@ html .ms-5 {
   .bs_container strong {
     margin-left: 2px;
   }
+
   .roadmap {
     padding: 2rem 0;
   }
+
   .right-pointer h4 {
     font-size: 0.8rem;
   }
+
   .specs_right img {
     width: 175px;
     height: 175px;
   }
+
   .specs_left h2 {
     margin-top: 4px;
   }
+
   .pointer-img {
     width: 60px;
   }
+
   .main_wrapper p {
     font-size: 0.8rem;
   }
@@ -1245,6 +1349,7 @@ html .ms-5 {
 }
 
 @media screen and (max-width: 389px) {
+
   .bs_container h2,
   .bs_container h5 {
     font-size: 0.7rem;
@@ -1258,6 +1363,7 @@ html .ms-5 {
 }
 
 @media screen and (max-width: 360px) {
+
   .bs_container h2,
   .bs_container h5 {
     font-size: 0.6rem;

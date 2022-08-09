@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Range } from 'react-range';
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../redux/data/dataActions";
+import { connect } from "../../redux/blockchain/blockchainActions";
 import Fade from "react-reveal/Fade";
 
 const BuySkull = () => {
@@ -58,7 +59,7 @@ const BuySkull = () => {
     if (blockchain.account) {
       console.log("CurrentAccount:", blockchain.account);
     }
-  }, [blockchain.account]);
+  }, [blockchain]);
 
   const claimNFTs = async () => {
     if (connected) {
@@ -82,7 +83,9 @@ const BuySkull = () => {
         setClaimingNft(false);
       }
     }
-    else alert("Wallet not connected !")
+    else {
+      dispatch(connect());
+    }
   };
 
   const checkAmount = (values) => {
@@ -95,12 +98,15 @@ const BuySkull = () => {
       <div className="buy_skull">
         <Fade duration={900} delay={910}>
           <div className="bs_container">
+            <div style={{display:"flex", flexDirection:"column"}}>
             <h2>BUY A SKUNK</h2>
             <h5>
-              Initial Price(test) <strong>.05 BNB</strong>
+              Initial Price(test)
             </h5>
+            <h5><strong>.05 BNB</strong></h5>
+            </div>
             <div style={{ alignItems: "center", textAlign: "center", width: "30%", display: "flex", flexDirection: "column", marginInline: "1.2em" }}>
-              <output style={{fontWeight:"bold", fontSize:"18px",  marginBottom: '15px' }} id="output">
+              <output id="output">
                 {mintAmount}
               </output>
               <Range

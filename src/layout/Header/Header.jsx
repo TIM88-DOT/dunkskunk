@@ -3,7 +3,7 @@ import "./header.css";
 import logo from "../../assets/images/upper-logo.png";
 import { Link } from "react-scroll";
 import { useDispatch, useSelector } from "react-redux";
-import { connect, startUp } from "../../redux/blockchain/blockchainActions";
+import { connect } from "../../redux/blockchain/blockchainActions";
 
 const Header = (props) => {
   const [activeNav, sectActiveNav] = useState(0);
