@@ -429,6 +429,8 @@
 .bs_container h2 {
   color: black;
   text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 15px;
 }
 
 .bs_container button {
@@ -1158,7 +1160,8 @@ html .ms-5 {
   .pointer-div5 {
     top: 79%;
   }
-  #output{
+
+  #output {
     margin-right: 8px;
   }
 }
@@ -1204,7 +1207,10 @@ html .ms-5 {
     width: 600px;
   }
 
-  .bs_container h2,
+  .bs_container h2{
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+  }
   .bs_container h5 {
     font-size: 1rem;
   }
@@ -1253,7 +1259,10 @@ html .ms-5 {
     padding: 10px;
   }
 
-  .bs_container h2,
+  .bs_container h2 {
+    font-size: 1.2rem;
+  }
+
   .bs_container h5 {
     font-size: 0.8rem;
   }
@@ -1265,7 +1274,8 @@ html .ms-5 {
   .main h1 {
     font-size: 1.5rem;
   }
-  #output{
+
+  #output {
     margin-right: 3px;
   }
 }
@@ -1276,7 +1286,8 @@ html .ms-5 {
     height: 130px;
     object-fit: contain;
   }
-  #output{
+
+  #output {
     margin-right: 1.5px;
   }
 }
@@ -1350,7 +1361,10 @@ html .ms-5 {
 
 @media screen and (max-width: 389px) {
 
-  .bs_container h2,
+  .bs_container h2 {
+    font-size: 1rem;
+  }
+
   .bs_container h5 {
     font-size: 0.7rem;
   }
@@ -1364,7 +1378,10 @@ html .ms-5 {
 
 @media screen and (max-width: 360px) {
 
-  .bs_container h2,
+  .bs_container h2 {
+    font-size: 0.8rem;
+  }
+
   .bs_container h5 {
     font-size: 0.6rem;
   }
