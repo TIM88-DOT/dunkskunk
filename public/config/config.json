@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x86296712858951341d7e1cd09ec49a1e10086913",
-  "SCAN_LINK": "https://testnet.bscscan.com/address/0x86296712858951341d7e1cd09ec49a1e10086913",
+  "CONTRACT_ADDRESS": "0x572f1e2D21652524b0F02ed23D46531C6373bffa",
+  "SCAN_LINK": "https://bscscan.com/address/0x572f1e2D21652524b0F02ed23D46531C6373bffa ",
   "NETWORK": {
-    "NAME": "Binance Smart Chain Testnet",
+    "NAME": "Binance Smart Chain",
     "SYMBOL": "BNB",
-    "ID": 97
+    "ID": 56
   },
   "NFT_NAME": "DrunkSkunks NFT",
   "SYMBOL": "DS NFT",

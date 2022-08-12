@@ -103,7 +103,7 @@ const BuySkull = () => {
             <h5>
               Initial Price(test)
             </h5>
-            <h5><strong>.05 BNB</strong></h5>
+            <h5><strong>.25 BNB</strong></h5>
             </div>
             <div style={{ alignItems: "center", textAlign: "center", width: "30%", display: "flex", flexDirection: "column", marginInline: "1.2em" }}>
               <output id="output">
